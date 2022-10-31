@@ -1,0 +1,145 @@
+
+.home {
+  width: 100%;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .bannerTitleDiv{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 300px 0;
+    background-color: rgba(0, 0, 0, 0.478);
+
+
+
+    >div{
+        width: 60%;
+        display: flex;
+        position: relative;
+        padding: 0 40px;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0);
+        text-align: left;
+
+        >h2{
+            font-size: 90px;
+            background-color: rgba(0, 0, 0, 0);
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        >p{
+            font-size: 25px;
+            word-spacing: 3px;
+            letter-spacing: 5px;
+            background-color: rgba(0, 0, 0, 0);
+            font-weight: 100;
+        }
+
+        >div{
+            margin-top: 30px;
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            >button{
+                
+                font-size: 30px;
+                padding: 20px 50px;
+                display: flex;
+                outline: none;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                border-radius: 5px;
+                margin-right: 20px;
+
+                &:nth-child(odd){
+                    background-color: white;
+                    transition: all 0.5s;
+                color: black;
+                >&:hover{
+                    background-color: rgb(171, 171, 171);
+                }
+                }
+                &:nth-child(even){
+                    background-color: rgb(71, 71, 71);
+                    color: white;
+                }
+                >svg{
+                    font-size: 2.5rem;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+  }
+
+  
+
+  .new {
+    padding: 1.5rem;
+    h2 {
+      font-weight: 300;
+    }
+    > div {
+      padding: 1.1rem 0;
+      display: flex;
+      overflow-x: auto;
+      > img {
+        margin: 7px;
+        height: 300px;
+        transition: 0.5s;
+      }
+
+      :hover{
+        transform: translateY(10px);
+        scale: 1.14;
+      }
+    }
+  }
+}
