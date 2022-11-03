@@ -2,12 +2,13 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import * as mdb from 'mdb-ui-kit';
 import {input} from 'mdb-ui-kit';
+import Logonetflix from "../assets/Logonetflix.png"
 
 function Header() {
   return (
     <>
     <nav className='header'>
-      <img src='assets/Logonetflix.png' alt='logo'/>
+      <img src={Logonetflix} alt='logo'/>
       <div className='div1'>
         <Link to="/">Home</Link>
         <Link to="about">About</Link>
