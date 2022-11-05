@@ -1,4 +1,6 @@
-
+*{
+  // border: 1px solid red;
+}
 .home {
   width: 100%;
   background-color: black;
@@ -88,7 +90,7 @@
             >button{
                 
                 font-size: 30px;
-                padding: 20px 50px;
+                padding: 15px 40px;
                 display: flex;
                 outline: none;
                 justify-content: center;
@@ -127,19 +129,65 @@
       font-weight: 300;
     }
     > div {
-      padding: 1.1rem 0;
       display: flex;
-      overflow-x: auto;
-      > img {
-        margin: 7px;
-        height: 300px;
-        transition: 0.5s;
-      }
+      overflow-x: auto; 
+      height: 350px;
+      >div{
+        display: flex;
+        border-radius: 7px;
+        height: 100%;
+       
+        >div{
+          display: flex;
+          height: 100%;
+          overflow: hidden;
 
-      :hover{
-        transform: translateY(10px);
-        scale: 1.14;
+          >img{
+            padding: 10px;
+            z-index: 1;
+            height: 100%;
+            border-radius: 5px;
+            transition: 0.5s;
+            &:hover{
+              scale: 1.1;
+            }
+            &:active{
+              filter: brightness(50%);
+              scale: 1.05;
+            }
+          }
+
+        }
+        
+
+       
       }
     }
+  }
+}
+
+
+
+//loader----------------------
+
+.loader{
+  height: 100vh;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  >div{
+      height: 120px;
+      width: 120px;
+      border-bottom: 5px solid white;
+      border-radius: 150px;
+      animation: rotat 0.3s infinite ease-in-out;
+      transition: 0.5s;
+  }
+  @keyframes rotat {
+      100%{
+          transform: rotate(360deg);
+      }
   }
 }

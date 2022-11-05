@@ -1,7 +1,5 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import * as mdb from 'mdb-ui-kit';
-import {input} from 'mdb-ui-kit';
 import Logonetflix from "../assets/Logonetflix.png"
 
 function Header() {
@@ -15,13 +13,7 @@ function Header() {
       </div>
       <div className='div2'>
       <div class="input-group">
-      <div class="form-outline">
-      <input type="search" id="form1" class="form-control" />
-      <label class="form-label" for="form1">Search</label>
-       </div>
-       <button type="button" class="btn btn-primary">
-      <i class="fa-search"/>
-      </button>
+       
       </div>
       </div>
     </nav>

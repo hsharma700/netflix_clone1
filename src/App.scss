@@ -48,19 +48,7 @@
     >div{
       display: flex;
       flex-direction: row;
-      >div{
-        display: flex;
-        >input{
-          color: white;
-          &::placeholder{
-            color: white;
-            background-color: aqua;
-          }
-        }
-      }
-      >button{
-       color: rgb(75, 191, 64);
-      }
+      
     }
 
   }

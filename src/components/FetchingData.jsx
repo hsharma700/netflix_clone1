@@ -16,7 +16,7 @@ export const UseApiData = () => {
   const [data3, setData3] = useState();
   const [data4, setData4] = useState();
   const [data5, setData5] = useState();
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setIsLoading(true);
     const fetchdata = async () => {
@@ -35,16 +35,18 @@ export const UseApiData = () => {
       const data5 = await axios.get(
         `${url}/${popularmovies}?api_key=${apikey}`
       );
-
-      setData(data);
+setTimeout(() => {
+  setData(data);
       setData2(data2.data)
       setData3(data3.data)
       setData4(data4.data) 
       setData5(data5.data)
-          setIsLoading(false);
+      setIsLoading(false);
+}, 1000);
+      
     };
 
     fetchdata();
-  }, []);
+  },[]);
   return { data, isLoading, data2, data3, data4, data5 };
 };
