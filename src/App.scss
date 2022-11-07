@@ -64,3 +64,24 @@
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+
+@media (max-width:600px) {
+  .header {
+    height: 60px;
+    >img{
+      height: 100%;
+    }
+    >.div1{
+      height: 100%;
+      align-items: center;
+      >a{
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
