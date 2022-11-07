@@ -1,8 +1,21 @@
 import React from "react";
+import { useState } from "react";
 import "./About.scss";
 
+
 function About() {
+
+  const [isLoading, setLoading] = useState(true)
+    setTimeout(()=>{
+      setLoading(false)
+    },500)
+
   return (
+    <>
+    {isLoading ? <div className="loader">
+    <div></div>
+  </div>
+:
     <div className="about">
       <div className="aboutmain">
         <div className="mdiv1">
@@ -34,7 +47,9 @@ function About() {
         </div>
       </div>
     </div>
-  );
+}
+</>
+)
 }
 
-export default About;
+export default About

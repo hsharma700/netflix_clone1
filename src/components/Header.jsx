@@ -12,7 +12,7 @@ function Header() {
         <Link to="about">About</Link>
       </div>
       <div className='div2'>
-      <div class="input-group">
+      <div className="input-group">
        
       </div>
       </div>

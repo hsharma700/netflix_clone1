@@ -35,14 +35,15 @@ export const UseApiData = () => {
       const data5 = await axios.get(
         `${url}/${popularmovies}?api_key=${apikey}`
       );
-setTimeout(() => {
-  setData(data);
+
+      setData(data);
       setData2(data2.data)
       setData3(data3.data)
       setData4(data4.data) 
       setData5(data5.data)
+setTimeout(() => {
       setIsLoading(false);
-}, 1000);
+}, 500);
       
     };
 

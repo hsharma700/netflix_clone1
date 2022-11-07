@@ -6,6 +6,7 @@
   background-color: black;
   color: white;
   min-height: 100vh;
+  transition: all 0.5s ease-in-out;
   ::-webkit-scrollbar {
     display: none;
   }
@@ -177,17 +178,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-in-out;
   >div{
       height: 120px;
       width: 120px;
       border-bottom: 5px solid white;
       border-radius: 150px;
       animation: rotat 0.3s infinite ease-in-out;
-      transition: 0.5s;
+      transition: all 0.5s ease-in-out;
   }
   @keyframes rotat {
       100%{
           transform: rotate(360deg);
+          transition: all 0.5s ease-in-out;
       }
   }
 }

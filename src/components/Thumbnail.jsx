@@ -11,8 +11,7 @@ export function Thumbnail({ thumnailData, index }) {
   const navigate = useNavigate();
 
   const srclocation = (e) => {
-    const imgSrc = thumnailData;
-    navigate("/detail", { state: { imgSrc } });
+    window.open(`/detail?poster_path=${thumnailData.poster_path}&title=${thumnailData?.original_title ?? thumnailData.original_name}&overview=${thumnailData.overview}`);
   };
 
   return (
