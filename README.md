@@ -1,3 +1,7 @@
+![hsharma700 github io-NetflixClone (1)](https://user-images.githubusercontent.com/70624640/209682283-10f22e8c-466e-457d-85b2-6719a7715ce3.jpeg)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
